@@ -1,0 +1,54 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 308px;
+	margin: 50px auto;
+}
+
+.container {
+	width: 308px;
+}
+
+.container:before,
+.container:after {
+	content: "";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+.number,
+.operator,
+.clear,
+.evaluate {
+	width: 75px;
+	height: 75px;
+	border: 1px solid black;
+	float: left;
+}
+
+.number {
+	background: #4598ac;
+}
+
+.operator,
+.evaluate {
+	background: #aa65c8;
+}
+
+#output {
+	width: 298px;
+	background: #ff2d57;
+	height: 50px;
+	border: 1px solid #000;
+	font-size: 20px;
+	text-align: center;
+}
