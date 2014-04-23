@@ -33,7 +33,7 @@ var Calculator = {
 	},
 
 	registerNumber: function ( ) {
-		if (!this.operator) {
+		if (!Calculator.operator) {
 			Calculator.beforeOp.push( this.innerHTML );
 			$('#output').html( Calculator.beforeOp.join('') );
 		} else {
